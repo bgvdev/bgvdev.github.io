@@ -27,8 +27,8 @@ export default function Skills() {
               Technical Arsenal
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant">
-              A stack spanning the Python, PHP, and JavaScript ecosystems — focused on scalable APIs, database
-              performance, and cloud-native tooling across the full application lifecycle.
+              A stack spanning the Python, PHP, and JavaScript ecosystems — weighted toward scalable APIs, database
+              performance, and event-driven services, with the frontend skills to ship the screens they feed.
             </p>
           </div>
           <div className="md:w-2/3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">

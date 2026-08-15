@@ -11,7 +11,7 @@ export default function Footer() {
         <div className="flex flex-col gap-2 text-center md:text-left">
           <span className="font-headline-md text-body-lg text-on-surface">Bhargav Gohel</span>
           <span className="text-on-surface-variant text-body-md">
-            Software Engineer — building scalable, maintainable systems.
+            Full-stack engineer, backend-focused — APIs, data, and the screens on top.
           </span>
         </div>
         <div className="flex flex-col items-center md:items-end gap-4">
