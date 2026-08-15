@@ -38,13 +38,19 @@ export default function Projects() {
                   i % 2 === 1 ? 'lg:order-2' : ''
                 }`}
               >
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-                  data-alt={project.alt}
-                  style={{ backgroundImage: `url('${project.image}')` }}
-                ></div>
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                />
                 {/* Seam blend: fade toward the content panel */}
-                <div className="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-surface-container-low"></div>
+                <div
+                  aria-hidden="true"
+                  className={`absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/20 to-transparent lg:from-transparent lg:via-transparent lg:to-surface-container-low ${
+                    i % 2 === 1 ? 'lg:bg-gradient-to-l' : 'lg:bg-gradient-to-r'
+                  }`}
+                ></div>
               </div>
 
               {/* Content panel */}
