@@ -65,6 +65,7 @@ export default {
         'container-max': '1280px',
         gutter: '24px',
         'margin-mobile': '20px',
+        'margin-tablet': '32px',
         'margin-desktop': '64px',
       },
       maxWidth: {

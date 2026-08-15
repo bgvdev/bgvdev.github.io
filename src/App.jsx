@@ -12,7 +12,9 @@ export default function App() {
     <>
       <Nav />
       <main className="w-full pt-20 bg-surface">
-        <div className="flex flex-col w-full relative overflow-hidden bg-surface text-on-surface pb-stack-lg">
+        {/* No overflow-hidden here: it would become the scroll container and
+            break sticky children. The decorative layer below clips itself. */}
+        <div className="flex flex-col w-full relative bg-surface text-on-surface pb-stack-lg">
           <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
             <svg
               className="absolute w-[200vw] h-[2048px] -top-[512px] -left-[50vw] opacity-[0.03] text-primary"
