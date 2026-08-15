@@ -1,15 +1,15 @@
 export default function Contact() {
   return (
     <section
-      className="relative z-10 w-full px-margin-mobile md:px-margin-desktop py-stack-lg lg:pt-32 bg-surface"
+      className="relative z-10 w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-stack-lg lg:pt-32 bg-surface"
       id="contact"
     >
       <div className="max-w-container-max mx-auto w-full">
-        <div className="bg-surface-container border border-outline-variant/30 rounded-2xl p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-stack-md relative overflow-hidden shadow-2xl">
+        <div className="bg-surface-container border border-outline-variant/30 rounded-2xl p-6 sm:p-8 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-stack-md relative overflow-hidden shadow-2xl">
           {/* Decorative bg element */}
           <div className="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/10 rounded-full blur-[60px] pointer-events-none"></div>
-          <div className="flex flex-col gap-4 relative z-10 max-w-xl text-center md:text-left">
-            <h2 className="font-display-lg text-[40px] md:text-display-lg text-on-surface font-bold tracking-tight">
+          <div className="flex flex-col gap-4 relative z-10 max-w-xl text-center lg:text-left">
+            <h2 className="font-display-lg text-[32px] sm:text-[40px] lg:text-display-lg text-on-surface font-bold tracking-tight">
               Let's build something.
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant">
@@ -17,9 +17,9 @@ export default function Contact() {
               building, I'd love to hear about it.
             </p>
           </div>
-          <div className="relative z-10 shrink-0">
+          <div className="relative z-10 shrink-0 w-full sm:w-auto">
             <a
-              className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/30 hover:scale-105"
+              className="group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 px-8 sm:px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/30 hover:scale-105"
               href="mailto:gohelbhargav442@gmail.com"
             >
               <span className="material-symbols-outlined relative z-10 text-[20px]">mail</span>

@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section
-      className="relative z-10 w-full min-h-[870px] flex items-center justify-center px-margin-mobile md:px-margin-desktop py-stack-lg border-b border-outline-variant/30"
+      className="relative z-10 w-full min-h-[min(870px,calc(100svh-5rem))] flex items-center justify-center px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-stack-lg border-b border-outline-variant/30"
       id="hero"
     >
       <div className="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
@@ -20,7 +20,7 @@ export default function Hero() {
             well-designed APIs and optimized databases to event-driven services that scale. Lately I've been exploring
             how AI can make everyday engineering faster and sharper.
           </p>
-          <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-8 w-full sm:w-auto">
             <a
               className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/20 hover:-translate-y-1"
               href="#projects"

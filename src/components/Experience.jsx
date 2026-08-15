@@ -136,12 +136,12 @@ export default function Experience() {
 
   return (
     <section
-      className="relative z-10 w-full px-margin-mobile md:px-margin-desktop py-stack-lg bg-surface"
+      className="relative z-10 w-full px-margin-mobile md:px-margin-tablet lg:px-margin-desktop py-stack-lg bg-surface"
       id="experience"
     >
       <div className="max-w-container-max mx-auto w-full flex flex-col gap-stack-md">
         <div className="flex items-end justify-between border-b border-outline-variant/30 pb-4">
-          <h2 className="font-headline-md text-headline-md text-on-surface tracking-tight">Where I've Worked</h2>
+          <h2 className="font-headline-md text-[24px] sm:text-headline-md text-on-surface tracking-tight">Where I've Worked</h2>
           <span className="font-code-sm text-code-sm text-on-surface-variant hidden md:block">
             {String(roles.length).padStart(2, '0')} // {roles.length === 1 ? 'POSITION' : 'POSITIONS'}
           </span>
@@ -153,7 +153,7 @@ export default function Experience() {
             role="tablist"
             aria-label="Work experience"
             onKeyDown={onKeyDown}
-            className="flex md:flex-col md:w-64 lg:w-72 shrink-0 overflow-x-auto md:overflow-visible -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0"
+            className="flex flex-wrap md:flex-col md:flex-nowrap md:w-56 lg:w-72 shrink-0"
           >
             {roles.map((item, i) => {
               const selected = i === active
