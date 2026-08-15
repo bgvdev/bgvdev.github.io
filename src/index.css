@@ -3,41 +3,143 @@
 @tailwind utilities;
 
 @layer base {
+  /* ── Light theme (default) ─────────────────────────────── */
+  :root {
+    --surface: 255 255 255;
+    --surface-dim: 224 226 230;
+    --surface-bright: 255 255 255;
+    --surface-container-lowest: 255 255 255;
+    --surface-container-low: 246 247 249;
+    --surface-container: 240 241 244;
+    --surface-container-high: 234 235 239;
+    --surface-container-highest: 228 230 234;
+    --surface-variant: 224 226 236;
+    --surface-tint: 0 82 255;
+    --background: 255 255 255;
+    --on-surface: 18 18 18;
+    --on-background: 18 18 18;
+    --on-surface-variant: 67 70 79;
+    --outline: 115 118 127;
+    --outline-variant: 195 198 207;
+    --primary: 0 82 255;
+    --on-primary: 255 255 255;
+    --primary-container: 219 225 255;
+    --on-primary-container: 0 24 73;
+    --primary-fixed: 221 225 255;
+    --primary-fixed-dim: 0 82 255;
+    --on-primary-fixed: 0 20 82;
+    --on-primary-fixed-variant: 0 56 182;
+    --inverse-surface: 47 49 49;
+    --inverse-on-surface: 241 240 240;
+    --inverse-primary: 183 196 255;
+    --secondary: 91 95 102;
+    --on-secondary: 255 255 255;
+    --secondary-container: 223 226 235;
+    --on-secondary-container: 25 28 34;
+    --secondary-fixed: 223 226 235;
+    --secondary-fixed-dim: 195 198 207;
+    --on-secondary-fixed: 23 27 33;
+    --on-secondary-fixed-variant: 67 71 80;
+    --tertiary: 191 48 3;
+    --on-tertiary: 255 255 255;
+    --tertiary-container: 255 219 208;
+    --on-tertiary-container: 60 8 0;
+    --tertiary-fixed: 255 219 210;
+    --tertiary-fixed-dim: 255 180 161;
+    --on-tertiary-fixed: 60 8 0;
+    --on-tertiary-fixed-variant: 137 30 0;
+    --error: 186 26 26;
+    --on-error: 255 255 255;
+    --error-container: 255 218 214;
+    --on-error-container: 65 0 2;
+  }
+
+  /* ── Dark theme (original Kinetic Logic palette) ───────── */
+  .dark {
+    --surface: 18 20 20;
+    --surface-dim: 18 20 20;
+    --surface-bright: 56 57 58;
+    --surface-container-lowest: 12 15 15;
+    --surface-container-low: 26 28 28;
+    --surface-container: 30 32 32;
+    --surface-container-high: 40 42 43;
+    --surface-container-highest: 51 53 53;
+    --surface-variant: 51 53 53;
+    --surface-tint: 183 196 255;
+    --background: 18 20 20;
+    --on-surface: 226 226 226;
+    --on-background: 226 226 226;
+    --on-surface-variant: 195 197 217;
+    --outline: 141 144 162;
+    --outline-variant: 67 70 86;
+    --primary: 183 196 255;
+    --on-primary: 0 38 130;
+    --primary-container: 0 82 255;
+    --on-primary-container: 223 227 255;
+    --primary-fixed: 221 225 255;
+    --primary-fixed-dim: 183 196 255;
+    --on-primary-fixed: 0 20 82;
+    --on-primary-fixed-variant: 0 56 182;
+    --inverse-surface: 226 226 226;
+    --inverse-on-surface: 47 49 49;
+    --inverse-primary: 0 76 237;
+    --secondary: 200 198 197;
+    --on-secondary: 49 48 48;
+    --secondary-container: 74 73 73;
+    --on-secondary-container: 186 184 183;
+    --secondary-fixed: 229 226 225;
+    --secondary-fixed-dim: 200 198 197;
+    --on-secondary-fixed: 28 27 27;
+    --on-secondary-fixed-variant: 71 70 70;
+    --tertiary: 255 180 161;
+    --on-tertiary: 97 19 0;
+    --tertiary-container: 191 48 3;
+    --on-tertiary-container: 255 221 213;
+    --tertiary-fixed: 255 219 210;
+    --tertiary-fixed-dim: 255 180 161;
+    --on-tertiary-fixed: 60 8 0;
+    --on-tertiary-fixed-variant: 137 30 0;
+    --error: 255 180 171;
+    --on-error: 105 0 5;
+    --error-container: 147 0 10;
+    --on-error-container: 255 218 214;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
   html {
     scroll-behavior: smooth;
   }
+  /* mix-blend-difference on the hero heading only reads correctly on a
+     dark ground; keep it normal in light mode so the title stays legible. */
+  html:not(.dark) h1 {
+    mix-blend-mode: normal;
+  }
+  /* Offset anchored sections so they clear the fixed 80px header */
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
   body {
-    @apply bg-ink text-slate-200 font-sans antialiased;
+    overscroll-behavior: none;
+    @apply bg-surface font-body-md text-body-md text-on-surface antialiased;
   }
-  ::selection {
-    @apply bg-fuchsia-500/40 text-white;
+  main > :first-child {
+    margin-top: 0 !important;
   }
-}
-
-@layer utilities {
-  .text-gradient {
-    @apply bg-gradient-to-r from-cyan-400 via-fuchsia-400 to-amber-300 bg-clip-text text-transparent;
-  }
-  .glass {
-    @apply bg-white/[0.03] border border-white/10 backdrop-blur-xl;
-  }
-  .section-pad {
-    @apply px-6 sm:px-10 lg:px-24;
+  main > :last-child {
+    margin-bottom: 0 !important;
   }
 }
 
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
-
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+::-webkit-scrollbar {
+  display: none;
 }
-.reveal.in-view {
-  opacity: 1;
-  transform: translateY(0);
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

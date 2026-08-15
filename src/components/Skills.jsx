@@ -1,38 +1,50 @@
-import useReveal from '../hooks/useReveal'
-import SectionHeading from './SectionHeading'
-import { skills } from '../data/content'
-
-function SkillCard({ group, index }) {
-  const ref = useReveal()
-  return (
-    <div
-      ref={ref}
-      className="reveal glass rounded-2xl p-6 hover:-translate-y-1 hover:border-white/20 transition-all"
-      style={{ transitionDelay: `${index * 60}ms` }}
-    >
-      <h3 className="font-mono text-sm text-amber-300">{group.category}</h3>
-      <div className="mt-4 flex flex-wrap gap-2">
-        {group.items.map((s) => (
-          <span
-            key={s}
-            className="rounded-full bg-white/5 border border-white/10 px-3 py-1 text-xs text-slate-300"
-          >
-            {s}
-          </span>
-        ))}
-      </div>
-    </div>
-  )
-}
+const skills = [
+  'Python',
+  'FastAPI',
+  'Laravel',
+  'PHP',
+  'Next.js',
+  'React',
+  'TypeScript',
+  'PostgreSQL',
+  'MySQL',
+  'Redis',
+  'Kafka',
+  'Docker',
+]
 
 export default function Skills() {
   return (
-    <section id="skills" className="section-pad py-24">
-      <SectionHeading kicker="03 · Skills" title="Tools I work with" />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {skills.map((group, i) => (
-          <SkillCard key={group.category} group={group} index={i} />
-        ))}
+    <section
+      className="relative z-10 w-full px-margin-mobile md:px-margin-desktop py-stack-lg bg-surface-container-lowest"
+      id="skills"
+    >
+      <div className="max-w-container-max mx-auto w-full">
+        <div className="flex flex-col md:flex-row gap-stack-lg items-start">
+          <div className="md:w-1/3 flex flex-col gap-4 sticky top-32">
+            <h2 className="font-headline-md text-headline-md text-on-surface inline-flex items-center gap-4">
+              <span className="w-12 h-px bg-primary"></span>
+              Technical Arsenal
+            </h2>
+            <p className="font-body-md text-body-md text-on-surface-variant">
+              A stack spanning the Python, PHP, and JavaScript ecosystems — focused on scalable APIs, database
+              performance, and cloud-native tooling across the full application lifecycle.
+            </p>
+          </div>
+          <div className="md:w-2/3 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {skills.map((skill) => (
+              <div
+                key={skill}
+                className="group relative flex flex-col items-center justify-center p-6 bg-surface-container border border-outline-variant/50 rounded-lg hover:border-primary transition-colors hover:shadow-md cursor-default overflow-hidden"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span className="font-code-sm text-code-sm text-on-surface group-hover:text-primary transition-colors font-bold tracking-wide relative z-10">
+                  {skill}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )
