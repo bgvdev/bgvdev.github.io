@@ -30,6 +30,7 @@ export default {
         'on-tertiary': 'rgb(var(--on-tertiary) / <alpha-value>)',
         'surface-container-low': 'rgb(var(--surface-container-low) / <alpha-value>)',
         primary: 'rgb(var(--primary) / <alpha-value>)',
+        'primary-hover': 'rgb(var(--primary-hover) / <alpha-value>)',
         tertiary: 'rgb(var(--tertiary) / <alpha-value>)',
         'on-error': 'rgb(var(--on-error) / <alpha-value>)',
         outline: 'rgb(var(--outline) / <alpha-value>)',
@@ -91,11 +92,16 @@ export default {
       },
       animation: {
         'pulse-slow': 'pulseSlow 8s ease-in-out infinite',
+        'fade-in-up': 'fadeInUp 400ms ease-out both',
       },
       keyframes: {
         pulseSlow: {
           '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
           '50%': { opacity: '0.65', transform: 'scale(1.05)' },
+        },
+        fadeInUp: {
+          '0%': { opacity: '0', transform: 'translateY(8px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
       },
     },

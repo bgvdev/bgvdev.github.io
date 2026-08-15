@@ -19,7 +19,7 @@ export default function Contact() {
           </div>
           <div className="relative z-10 shrink-0">
             <a
-              className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-[#0041cc] dark:hover:bg-primary-fixed hover:shadow-primary/30 hover:scale-105"
+              className="group relative inline-flex items-center justify-center gap-3 px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/30 hover:scale-105"
               href="mailto:gohelbhargav442@gmail.com"
             >
               <span className="material-symbols-outlined relative z-10 text-[20px]">mail</span>
