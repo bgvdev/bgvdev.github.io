@@ -6,12 +6,18 @@ export default function Hero() {
     >
       <div className="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div className="md:col-span-12 lg:col-span-10 flex flex-col items-start justify-center gap-stack-md">
-          <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface max-w-4xl tracking-tighter mix-blend-difference">
-            Building <span className="text-primary-fixed-dim">scalable</span> web apps & backend systems.
-          </h1>
+          <div className="flex flex-col items-start gap-4">
+            <span className="font-code-sm text-code-sm uppercase tracking-widest text-primary inline-flex items-center gap-3">
+              <span className="w-8 h-px bg-primary"></span>
+              Full-Stack Engineer · Backend-Focused
+            </span>
+            <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface max-w-4xl tracking-tighter mix-blend-difference">
+              Building <span className="text-primary-fixed-dim">scalable</span> web apps & backend systems.
+            </h1>
+          </div>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
             I'm a software engineer who enjoys turning complex problems into clean, dependable systems — from
-            well-designed APIs and optimized databases to cloud-native services that scale. Lately I've been exploring
+            well-designed APIs and optimized databases to event-driven services that scale. Lately I've been exploring
             how AI can make everyday engineering faster and sharper.
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
