@@ -5,20 +5,18 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="h-20 max-w-container-max mx-auto px-margin-desktop flex items-center justify-between">
         <div className="flex items-center gap-4">
-          <div className="flex h-9 w-9 items-center justify-center rounded bg-primary text-on-primary font-headline-md text-[16px] font-black tracking-tight">
-            BG
-          </div>
-          <span className="font-headline-md text-headline-md text-on-surface tracking-tight">BHARGAV_GOHEL</span>
+          <span className="font-headline-md text-headline-md text-on-surface tracking-tight">
+            <a
+              aria-current="page"
+              className="transition-colors uppercase text-primary font-bold"
+              data-path="hero"
+              href="#hero"
+              >
+              BHARGAV
+            </a>
+          </span>
         </div>
         <nav className="hidden md:flex items-center gap-stack-md" data-active-classes="text-primary font-bold">
-          <a
-            aria-current="page"
-            className="transition-colors uppercase text-primary font-bold"
-            data-path="hero"
-            href="#hero"
-          >
-            Hero
-          </a>
           <a
             className="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase"
             data-path="skills"
