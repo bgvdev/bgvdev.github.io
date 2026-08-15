@@ -7,11 +7,10 @@ export default function Nav() {
         <div className="flex items-center gap-4">
           <span className="font-headline-md text-headline-md text-on-surface tracking-tight">
             <a
-              aria-current="page"
               className="transition-colors uppercase text-primary font-bold"
               data-path="hero"
               href="#hero"
-              >
+            >
               BHARGAV
             </a>
           </span>
@@ -23,6 +22,13 @@ export default function Nav() {
             href="#skills"
           >
             Skills
+          </a>
+          <a
+            className="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase"
+            data-path="experience"
+            href="#experience"
+          >
+            Experience
           </a>
           <a
             className="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-colors uppercase"

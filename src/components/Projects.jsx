@@ -77,7 +77,7 @@ export default function Projects() {
                 </div>
                 <div className="mt-2">
                   <a
-                    className="group/btn relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-[#0041cc] dark:hover:bg-primary-fixed hover:shadow-primary/20 hover:-translate-y-1 w-fit"
+                    className="group/btn relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/20 hover:-translate-y-1 w-fit"
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"

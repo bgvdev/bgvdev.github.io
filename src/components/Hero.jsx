@@ -16,7 +16,7 @@ export default function Hero() {
           </p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-8">
             <a
-              className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-[#0041cc] dark:hover:bg-primary-fixed hover:shadow-primary/20 hover:-translate-y-1"
+              className="group relative inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/20 hover:-translate-y-1"
               href="#projects"
             >
               <span className="relative z-10 font-bold">View Projects</span>
