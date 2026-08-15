@@ -22,7 +22,7 @@ export default function Skills() {
       <div className="max-w-container-max mx-auto w-full">
         <div className="flex flex-col lg:flex-row gap-stack-md lg:gap-stack-lg items-start">
           <div className="lg:w-1/3 flex flex-col gap-4 lg:sticky lg:top-32">
-            <h2 className="font-headline-md text-[24px] sm:text-headline-md text-on-surface inline-flex items-center gap-4">
+            <h2 className="font-headline-md text-[24px] font-bold leading-[1.3] tracking-[-0.02em] sm:text-headline-md text-on-surface inline-flex items-center gap-4">
               <span className="w-12 h-px bg-primary"></span>
               Technical Arsenal
             </h2>

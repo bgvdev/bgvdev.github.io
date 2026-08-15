@@ -141,7 +141,9 @@ export default function Experience() {
     >
       <div className="max-w-container-max mx-auto w-full flex flex-col gap-stack-md">
         <div className="flex items-end justify-between border-b border-outline-variant/30 pb-4">
-          <h2 className="font-headline-md text-[24px] sm:text-headline-md text-on-surface tracking-tight">Where I've Worked</h2>
+          <h2 className="font-headline-md text-[24px] font-bold leading-[1.3] sm:text-headline-md text-on-surface tracking-tight">
+            Where I've Worked
+          </h2>
           <span className="font-code-sm text-code-sm text-on-surface-variant hidden md:block">
             {String(roles.length).padStart(2, '0')} // {roles.length === 1 ? 'POSITION' : 'POSITIONS'}
           </span>
