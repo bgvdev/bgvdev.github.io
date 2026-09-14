@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import ThemeToggle from './ThemeToggle'
 
 const sections = [
   { label: 'Skills', path: 'skills' },
@@ -53,8 +52,14 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-          <ThemeToggle />
+        <div className="flex items-center gap-3">
+          {/* Primary CTA — desktop only; the mobile menu carries its own copy */}
+          <a
+            className="hidden md:inline-flex items-center justify-center px-5 py-2.5 rounded border border-primary text-primary font-code-sm text-code-sm transition-colors hover:bg-primary hover:text-on-primary"
+            href="#contact"
+          >
+            Start a Project
+          </a>
           <button
             type="button"
             className="md:hidden flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/60 bg-surface-container text-on-surface transition-colors hover:border-primary hover:text-primary"
@@ -86,6 +91,13 @@ export default function Nav() {
             {section.label}
           </a>
         ))}
+        <a
+          className="my-3 flex items-center justify-center px-5 py-3 rounded border border-primary text-primary font-code-sm text-code-sm transition-colors hover:bg-primary hover:text-on-primary"
+          href="#contact"
+          onClick={() => setOpen(false)}
+        >
+          Start a Project
+        </a>
       </nav>
     </header>
   )
