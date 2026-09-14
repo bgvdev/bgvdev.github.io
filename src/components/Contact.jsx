@@ -1,3 +1,27 @@
+// Three ways to reach me, in the order I actually check them.
+const channels = [
+  {
+    icon: 'mail',
+    label: 'Email',
+    value: 'gohelbhargav442@gmail.com',
+    href: 'mailto:gohelbhargav442@gmail.com',
+  },
+  {
+    icon: 'work',
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/bhargavgohel',
+    href: 'https://linkedin.com/in/bhargavgohel',
+    external: true,
+  },
+  {
+    icon: 'code',
+    label: 'GitHub',
+    value: 'github.com/bgvdev',
+    href: 'https://github.com/bgvdev',
+    external: true,
+  },
+]
+
 export default function Contact() {
   return (
     <section
@@ -5,27 +29,59 @@ export default function Contact() {
       id="contact"
     >
       <div className="max-w-container-max mx-auto w-full">
-        <div className="bg-surface-container border border-outline-variant/30 rounded-2xl p-6 sm:p-8 lg:p-16 flex flex-col lg:flex-row items-center justify-between gap-stack-md relative overflow-hidden shadow-2xl">
-          {/* Decorative bg element */}
-          <div className="absolute -right-20 -bottom-20 w-64 h-64 bg-primary/10 rounded-full blur-[60px] pointer-events-none"></div>
-          <div className="flex flex-col gap-4 relative z-10 max-w-xl text-center lg:text-left">
-            <h2 className="font-display-lg text-[32px] sm:text-[40px] lg:text-display-lg text-on-surface font-bold tracking-tight">
-              Let's build something.
+        <div className="grid grid-cols-1 lg:grid-cols-[1.25fr_1fr] gap-stack-lg lg:gap-24 items-center">
+          {/* Left — the pitch */}
+          <div className="flex flex-col items-center text-center gap-6">
+            <span className="font-label-caps text-label-caps uppercase tracking-[0.2em] text-on-surface-variant">
+              Get Started
+            </span>
+            <h2 className="font-display-lg text-[32px] sm:text-[40px] lg:text-[52px] leading-tight text-on-surface font-bold tracking-tight max-w-xl">
+              Ready to build something that holds up?
             </h2>
-            <p className="font-body-lg text-body-lg text-on-surface-variant">
-              I'm open to new roles and interesting engineering problems. If you're working on something worth
-              building, I'd love to hear about it.
+            <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+              Tell me what you're working on. I'll help you get from a rough idea to an API and interface that
+              scale with it.
             </p>
-          </div>
-          <div className="relative z-10 shrink-0 w-full sm:w-auto">
             <a
-              className="group relative inline-flex w-full sm:w-auto items-center justify-center gap-3 px-8 sm:px-10 py-5 bg-primary text-on-primary font-label-caps text-label-caps uppercase tracking-wider rounded overflow-hidden shadow-lg transition-all hover:bg-primary-hover hover:shadow-primary/30 hover:scale-105"
+              className="group mt-2 inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-on-primary rounded transition-all hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/25"
               href="mailto:gohelbhargav442@gmail.com"
             >
-              <span className="material-symbols-outlined relative z-10 text-[20px]">mail</span>
-              <span className="relative z-10 font-bold">Get in Touch</span>
-              <div className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></div>
+              <span className="material-symbols-outlined text-[20px]">mail</span>
+              <span className="font-body-md text-body-md font-bold">Get in Touch</span>
             </a>
+          </div>
+
+          {/* Right — the direct channels */}
+          <div className="w-full">
+            <h3 className="font-headline-md text-[26px] sm:text-headline-md text-on-surface font-bold tracking-tight mb-8">
+              Reach Me
+            </h3>
+            <ul className="flex flex-col">
+              {channels.map((channel, i) => (
+                <li
+                  key={channel.label}
+                  className={i > 0 ? 'border-t border-outline-variant/50' : undefined}
+                >
+                  <a
+                    className="group flex items-center gap-5 py-5 transition-colors"
+                    href={channel.href}
+                    {...(channel.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                  >
+                    <span className="shrink-0 flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/60 bg-surface-container text-on-surface-variant transition-colors group-hover:border-primary group-hover:text-primary">
+                      <span className="material-symbols-outlined text-[20px]">{channel.icon}</span>
+                    </span>
+                    <span className="flex flex-col gap-1 min-w-0">
+                      <span className="font-label-caps text-label-caps uppercase tracking-[0.16em] text-on-surface-variant">
+                        {channel.label}
+                      </span>
+                      <span className="font-body-md text-body-md text-on-surface break-words transition-colors group-hover:text-primary">
+                        {channel.value}
+                      </span>
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
