@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  /* ── Light theme (default) — Grove86 "paper" ─────────────
+  /* ── Light theme (default) — "paper" ─────────────────────
      paper #f2efe9 ground, ink #12151c type, amber accent. */
   :root {
     --surface: 242 239 233;
@@ -56,7 +56,7 @@
     --on-error-container: 62 8 5;
   }
 
-  /* ── Dark theme — Grove86 "ink" ───────────────────────── */
+  /* ── Dark theme — "ink" ───────────────────────────────── */
   .dark {
     --surface: 18 21 28;
     --surface-dim: 18 21 28;
