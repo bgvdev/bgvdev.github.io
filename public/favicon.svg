@@ -1,6 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
-  <rect width="100" height="100" rx="22" fill="#0052FF" />
-  <g fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
+  <style>
+    /* Light browser chrome: amber tile, ink glyph */
+    .tile { fill: #E8A33D; }
+    .glyph { stroke: #12151C; }
+    /* Dark browser chrome: ink tile, amber glyph */
+    @media (prefers-color-scheme: dark) {
+      .tile { fill: #1F2531; }
+      .glyph { stroke: #E8A33D; }
+    }
+  </style>
+  <rect class="tile" width="100" height="100" rx="22" />
+  <g class="glyph" fill="none" stroke-width="11" stroke-linecap="round" stroke-linejoin="round">
     <path d="M19 28 V72" />
     <path d="M19 28 H29 A9 11 0 0 1 29 50 H19" />
     <path d="M19 50 H31 A9 11 0 0 1 31 72 H19" />
