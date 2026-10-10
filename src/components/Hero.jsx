@@ -5,7 +5,23 @@ export default function Hero() {
       id="hero"
     >
       <div className="max-w-container-max mx-auto w-full grid grid-cols-1 md:grid-cols-12 gap-gutter">
-        <div className="md:col-span-12 lg:col-span-10 flex flex-col items-start justify-center gap-stack-md">
+        <div className="md:col-span-12 lg:col-span-4 lg:order-last flex justify-start lg:justify-end items-center mb-4 lg:mb-0">
+          <div className="relative w-32 h-32 sm:w-40 sm:h-40 lg:w-full lg:h-auto lg:max-w-sm lg:aspect-square">
+            <div className="absolute inset-0 translate-x-3 translate-y-3 rounded-lg border-2 border-primary/60" aria-hidden="true"></div>
+            <picture>
+              <source srcSet="/profile.webp" type="image/webp" />
+              <img
+                src="/profile.jpg"
+                alt="Bhargav Gohel"
+                width="640"
+                height="640"
+                fetchPriority="high"
+                className="relative w-full h-full object-cover rounded-lg border border-outline-variant/40 shadow-xl bg-surface-container"
+              />
+            </picture>
+          </div>
+        </div>
+        <div className="md:col-span-12 lg:col-span-8 flex flex-col items-start justify-center gap-stack-md">
           <div className="flex flex-col items-start gap-4">
             <span className="font-code-sm text-code-sm uppercase tracking-widest text-primary inline-flex items-center gap-3">
               <span className="w-8 h-px bg-primary"></span>
