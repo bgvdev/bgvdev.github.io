@@ -32,9 +32,8 @@ export default function Hero() {
             </h1>
           </div>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-            I'm a software engineer who enjoys turning complex problems into clean, dependable systems — from
-            well-designed APIs and optimized databases to event-driven services that scale. Lately I've been exploring
-            how AI can make everyday engineering faster and sharper.
+            Three years building APIs, multi-tenant backends and the Next.js frontends on top — across auction,
+            e-commerce and real estate products. Currently bringing LLM features into production apps.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-8 w-full sm:w-auto">
             <a
