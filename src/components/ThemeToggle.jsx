@@ -19,7 +19,7 @@ export default function ThemeToggle() {
       onClick={() => setDark((v) => !v)}
       aria-label="Toggle color theme"
       aria-pressed={dark}
-      className="group relative flex h-9 w-9 items-center justify-center rounded-full border border-outline-variant/60 bg-surface-container text-on-surface transition-all hover:border-primary hover:text-primary"
+      className="group relative flex h-11 w-11 items-center justify-center rounded-full border border-outline-variant/60 bg-surface-container text-on-surface transition-all hover:border-primary hover:text-primary"
     >
       <span className="material-symbols-outlined text-[18px] transition-transform duration-500 group-hover:rotate-45">
         {dark ? 'light_mode' : 'dark_mode'}
