@@ -39,8 +39,7 @@ export default function Contact() {
               Ready to build something that holds up?
             </h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-md">
-              Tell me what you're working on. I'll help you get from a rough idea to an API and interface that
-              scale with it.
+              Have a project or a role in mind? Send me a note.
             </p>
             <a
               className="group mt-2 inline-flex items-center justify-center gap-3 px-8 py-4 bg-primary text-on-primary rounded transition-all hover:bg-primary-hover hover:shadow-lg hover:shadow-primary/25"

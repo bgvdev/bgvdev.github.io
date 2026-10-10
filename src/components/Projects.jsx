@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'TrakSpend',
     description:
-      'A full-stack expense tracker I built end to end — a Next.js 15 frontend backed by a Laravel REST API with token-based auth, PostgreSQL storage, and a Dockerized development setup. Designed for a clean, fast experience from sign-in to insight.',
+      'An expense tracker built end to end — a Next.js 15 frontend on Vercel and a Laravel API on Render, with Sanctum auth and PostgreSQL on Neon.',
     tags: ['Next.js', 'TypeScript', 'Laravel', 'PostgreSQL', 'Docker'],
     image:
       'https://lh3.googleusercontent.com/aida-public/AB6AXuCsbtSPcNZbE7oJlMqTKYcCsHtYfhAR6ONNNkX5YkfxP0bLQgA0Ai4nFsz9yvsfEe4P5qR-Cjsu_OQbdK9qagnfkKmaKbxIeLLOfGIWRt_nrgPqx837Gw9sOSDkrAAaoBRcPGjcYXf5VPpM4EEnjMABNAWEubzr1ogjhQgT3SkoNl6VJvoO3pW5HCl2e9DNMzK_e6zxgqQhko3UDb14md8sg4efZedtvjtnv1XJSzormcfvJpBckdDNww',

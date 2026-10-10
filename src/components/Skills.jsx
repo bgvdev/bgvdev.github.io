@@ -2,7 +2,6 @@ const skills = [
   'Python',
   'FastAPI',
   'Laravel',
-  'PHP',
   'Next.js',
   'React',
   'TypeScript',
@@ -11,6 +10,7 @@ const skills = [
   'Redis',
   'Kafka',
   'Docker',
+  'AWS',
 ]
 
 export default function Skills() {
@@ -27,8 +27,8 @@ export default function Skills() {
               Technical Arsenal
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant">
-              A stack spanning the Python, PHP, and JavaScript ecosystems — weighted toward scalable APIs, database
-              performance, and event-driven services, with the frontend skills to ship the screens they feed.
+              Python and PHP on the backend, Next.js on the front — with PostgreSQL, Redis and Kafka doing the heavy
+              lifting underneath.
             </p>
           </div>
           <div className="w-full lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">

@@ -33,77 +33,55 @@ const roles = [
     company: 'JBK Technologies',
     title: 'Software Engineer',
     period: 'Aug 2024 — Present',
-    location: 'Remote · Pune-based team',
+    location: 'Remote · Pune, India',
     current: true,
-    summary:
-      'Full-stack work across three products in the property and auction space — backend-leaning, but shipping the Next.js interfaces those APIs feed.',
+    summary: 'Full-stack work on real estate and auction products, leaning backend.',
     highlights: [
       {
         label: 'RealtyFlow',
-        text: 'Built the multi-tenant backend on FastAPI and SQLAlchemy — tenant-isolated PostgreSQL schemas behind JWT and bcrypt authentication.',
+        text: 'Built the multi-tenant FastAPI backend — tenant isolation, role-based access and JWT/OAuth2 auth on PostgreSQL.',
       },
       {
         label: 'AuctionAlgo',
-        text: 'Worked every side of auctionalgo.com — admin and seller panels plus the Next.js storefront, building both the Laravel APIs and the UI.',
+        text: 'Shipped features end to end on auctionalgo.com — FastAPI REST APIs and a server-rendered Next.js frontend.',
       },
       {
         label: 'Bidsquare',
-        text: 'Extended the storefront and the admin and seller panels of bidsquare.com, inside an established Phalcon PHP codebase serving live bidders.',
+        text: 'Maintained core auction features on bidsquare.com, with production fixes and performance work.',
       },
       {
-        label: 'Across Projects',
-        text: 'Design APIs and schemas, build the Next.js screens on top, move heavy work onto Kafka and Redis, and review teammates’ pull requests.',
+        label: 'LLM Integration',
+        text: 'Added LLM features through the OpenAI SDK, with prompts returning Pydantic-validated structured output.',
       },
       {
-        label: 'What I Took Away',
-        text: 'Fluency in concurrency and multi-tenancy, plus real command of Next.js — owning both sides shows how backend choices decide frontend speed.',
+        label: 'Infra & Quality',
+        text: 'Redis and Kafka for event-driven background jobs, Pytest coverage, and Docker plus GitHub Actions for CI/CD.',
       },
     ],
-    stack: [
-      'FastAPI',
-      'SQLAlchemy',
-      'PostgreSQL',
-      'Laravel',
-      'Next.js',
-      'React',
-      'TypeScript',
-      'Phalcon',
-      'Redis',
-      'Kafka',
-      'Docker',
-    ],
+    stack: ['FastAPI', 'SQLAlchemy', 'PostgreSQL', 'Next.js', 'TypeScript', 'Redis', 'Kafka', 'Docker'],
   },
   {
     company: 'Cybercom Creation',
-    title: 'Software Developer',
+    title: 'Software Engineer',
     period: 'Feb 2023 — Aug 2024',
-    location: 'Ahmedabad, Gujarat',
+    location: 'Ahmedabad, India',
     current: false,
-    summary:
-      'Grew from intern to engineer on a high-volume US e-commerce platform, where a slow query is a lost order.',
+    summary: 'Features and performance work on 1stopbedrooms.com, a large US e-commerce platform.',
     highlights: [
       {
-        label: 'Internship',
-        text: 'Joined as an intern for six months — learned PHP and MySQL in depth, version control habits, and how a large production codebase fits together.',
-      },
-      {
-        label: 'Storefront Features',
-        text: 'Shipped production features and fixes for 1stopbedrooms.com, a large US furniture retailer on Magento, across catalog and customer-facing flows.',
-      },
-      {
         label: 'Inventory Automation',
-        text: 'Owned the scheduled jobs syncing 10,000+ inventory records daily across multiple brands, keeping storefront stock accurate.',
+        text: 'Ran the scheduled jobs and queues syncing 10,000+ inventory records daily across multiple brands.',
       },
       {
-        label: 'Performance & UI',
-        text: 'Rewrote expensive MySQL queries and reshaped heavy tables to halve execution time, and built Vue.js components backed by GraphQL.',
+        label: 'Query Performance',
+        text: 'Cut MySQL execution time by up to 50% through indexing and query refactoring on heavy tables.',
       },
       {
-        label: 'What I Took Away',
-        text: 'Learned to read unfamiliar code before changing it, measure before optimising, and ship safely to a storefront carrying real traffic.',
+        label: 'APIs & UI',
+        text: 'Built Laravel REST APIs for frontend modules and third-party services, plus interactive jQuery and Ajax components.',
       },
     ],
-    stack: ['PHP', 'Magento', 'MySQL', 'Vue.js', 'GraphQL', 'jQuery'],
+    stack: ['PHP', 'Laravel', 'MySQL', 'JavaScript', 'jQuery'],
   },
 ]
 
