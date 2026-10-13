@@ -6,7 +6,7 @@ const skills = [
   'React',
   'TypeScript',
   'PostgreSQL',
-  'MySQL',
+  'LLM Integration',
   'Redis',
   'Kafka',
   'Docker',
