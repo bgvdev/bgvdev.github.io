@@ -27,7 +27,7 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
-      <div className="h-20 max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+      <div className="h-20 box-content max-w-container-max mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
         <div className="flex items-center gap-4">
           <span className="font-headline-md text-[24px] sm:text-headline-md text-on-surface tracking-tight">
             <a
@@ -36,7 +36,7 @@ export default function Nav() {
               href="#hero"
               onClick={() => setOpen(false)}
             >
-              BHARGAV
+              Bhargav Gohel
             </a>
           </span>
         </div>
