@@ -1,16 +1,16 @@
 const projects = [
   {
-    title: 'InterviewPrep',
+    title: 'AI Interview Suite',
     description:
-      'AI mock technical interviews — upload a resume and job description, answer tailored AI-generated questions, and get a scored report with per-question feedback.',
+      'A mock-interview platform that reads your resume PDF and a job description, asks questions built for that role, then uses LLMs to grade each answer and return an overall score, feedback and a hiring recommendation.',
     tags: ['FastAPI', 'Python', 'Next.js', 'PostgreSQL', 'LLM Integration'],
-    live: 'https://ai-interview-suite-front.vercel.app',
+    live: 'https://aiinterviewsuite.vercel.app',
     repos: [{ label: 'Code', href: 'https://github.com/ai-interview-suite' }],
   },
   {
     title: 'TrakSpend',
     description:
-      'Expense tracker — record, filter and export expenses, with a dashboard and visual reports that show where your money goes.',
+      'A personal finance app for logging and filtering spending, exporting records, and seeing where the money goes through a dashboard and visual reports, backed by a containerized Laravel API.',
     tags: ['Next.js', 'TypeScript', 'Laravel', 'PostgreSQL', 'Docker'],
     live: 'https://trakspend.vercel.app',
     repos: [{ label: 'Code', href: 'https://github.com/bgvdev/expense-tracker' }],
