@@ -31,10 +31,10 @@ function withLinks(text) {
 const roles = [
   {
     company: 'JBK Technologies',
-    title: 'Software Engineer',
-    period: 'Aug 2024 — Present',
+    title: 'Full Stack Developer',
+    period: 'Aug 2024 — Sep 2026',
     location: 'Remote · Pune, India',
-    current: true,
+    current: false,
     summary: 'Full-stack work on real estate and auction products, leaning backend.',
     highlights: [
       {
@@ -62,7 +62,7 @@ const roles = [
   },
   {
     company: 'Cybercom Creation',
-    title: 'Software Engineer',
+    title: 'Software Developer',
     period: 'Feb 2023 — Aug 2024',
     location: 'Ahmedabad, India',
     current: false,
