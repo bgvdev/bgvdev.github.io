@@ -2,8 +2,8 @@ const projects = [
   {
     title: 'AI Interview Suite',
     description:
-      'A mock-interview platform that reads your resume PDF and a job description, asks questions built for that role, then uses LLMs to grade each answer and return an overall score, feedback and a hiring recommendation.',
-    tags: ['FastAPI', 'Python', 'Next.js', 'PostgreSQL', 'LLM Integration'],
+      'A mock-interview platform that reads your resume PDF and a job description, asks questions built for that role, then uses OpenRouter LLMs to grade each answer and return an overall score, feedback and a hiring recommendation.',
+    tags: ['FastAPI', 'Python', 'Next.js', 'PostgreSQL', 'LLM Integration', 'OpenRouter'],
     live: 'https://aiinterviewsuite.vercel.app',
     repos: [{ label: 'Code', href: 'https://github.com/ai-interview-suite' }],
   },

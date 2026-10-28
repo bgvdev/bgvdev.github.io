@@ -25,15 +25,16 @@ export default function Hero() {
           <div className="flex flex-col items-start gap-4">
             <span className="font-code-sm text-code-sm uppercase tracking-widest text-primary inline-flex items-center gap-3">
               <span className="w-8 h-px bg-primary"></span>
-              Full-Stack Engineer · Backend-Focused
+              Software Engineer · Full Stack & AI Integration
             </span>
             <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface max-w-4xl tracking-tighter mix-blend-difference">
               Building <span className="text-primary-fixed-dim">scalable</span> web apps & backend systems.
             </h1>
           </div>
           <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-            Three years building APIs, multi-tenant backends and the Next.js frontends on top — across auction,
-            e-commerce and real estate products. Currently bringing LLM features into production apps.
+            Over three years building APIs, multi-tenant backends and the Next.js frontends on top — across auction,
+            e-commerce and real estate products. Recently that has meant building LLM features into production
+            backends: structured outputs, prompt design and the plumbing that makes them reliable.
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-8 w-full sm:w-auto">
             <a

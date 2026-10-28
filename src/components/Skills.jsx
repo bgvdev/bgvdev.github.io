@@ -28,7 +28,7 @@ export default function Skills() {
             </h2>
             <p className="font-body-md text-body-md text-on-surface-variant">
               Python and PHP on the backend, Next.js on the front — with PostgreSQL, Redis and Kafka doing the heavy
-              lifting underneath.
+              lifting underneath, and LLM features layered on top.
             </p>
           </div>
           <div className="w-full lg:w-2/3 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4">
